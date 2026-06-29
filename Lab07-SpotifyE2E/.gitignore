@@ -1,0 +1,15 @@
+# .NET build artifacts
+bin/
+obj/
+
+# Playwright auth (¡NUNCA SUBIR!)
+playwright/.auth/
+**/playwright/.auth/
+
+# Test results
+TestResults/
+*.trx
+
+# IDE
+.vs/
+.vscode/

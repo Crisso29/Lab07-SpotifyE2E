@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+
+  <!-- ========================================================== -->
+  <!--  CONFIGURACIÓN DE PLAYWRIGHT                                -->
+  <!--  Lab 07 — IS-489 — Tests E2E de Spotify                     -->
+  <!-- ========================================================== -->
+  
+  <Playwright>
+    <!-- Navegador único: Chromium (motor de Google Chrome) -->
+    <BrowserName>chromium</BrowserName>
+    
+    <!-- Opciones de lanzamiento del navegador -->
+    <LaunchOptions>
+      <!-- false = navegador visible | true = invisible (CI/CD) -->
+      <Headless>false</Headless>
+      
+      <!-- Velocidad reducida (ms) para que puedas ver lo que pasa -->
+      <SlowMo>500</SlowMo>
+    </LaunchOptions>
+  </Playwright>
+
+  <!-- ========================================================== -->
+  <!--  CONFIGURACIÓN DE NUNIT                                     -->
+  <!-- ========================================================== -->
+  
+  <NUnit>
+    <!-- Ejecutar tests de una clase secuencialmente -->
+    <!-- (evita conflictos con el navegador compartido) -->
+    <NumberOfTestWorkers>1</NumberOfTestWorkers>
+  </NUnit>
+
+</RunSettings>
